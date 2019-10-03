@@ -10,6 +10,20 @@ Create an array of strings called `colors` that contain "orange", "red", "yellow
 
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
 
+````
+var colors: [String]
+
+let colorVarieties = ["orange", "red", "yellow", "turquoise", "lavender"]
+
+let orange = colorVarieties[colorVarieties.count - 5]
+let yellow = colorVarieties[colorVarieties.count - 3]
+let lavender = colorVarieties[colorVarieties.count - 1]
+
+print("\(orange) , \(yellow) , and \(lavender) are my favorite colors")
+
+
+
+````
 
 ## Question 2
 
@@ -17,6 +31,14 @@ Remove "Illinois" and "Kansas" from the array below.
 
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
 
+''''
+var states: [String]
+var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
+
+let removedStates = westernStates.remove(at: westernStates.count - 2)
+let anotherRemovedState = westernStates.remove(at: westernStates.count - 1)
+print(westernStates)
+''''
 
 ## Question 3
 
